@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper1">
+
+    <header>
+        <h1>Online Banking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#accounts">Accounts</a></li>
+                <li><a href="#transfers">Transfers</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+
+    <main>
+        <div class="wrapper">
+        <section id="accounts">
+            <h2>Your Accounts</h2>
+            <p>View your account balances and recent transactions.</p>
+            <!-- Account details would go here -->
+        </section>
+        </div>
+        <div class="wrapper2">
+        <section id="transfers">
+            <h2>Make a Transfer</h2>
+            <form action="transfer.php" method="post">
+
+                <label for="fromAccount">From Account:</label>
+                <select id="fromAccount" name="fromAccount">
+                    <option value="account1">Account 1</option>
+                    <option value="account2">Account 2</option>
+                </select>
+
+                <label for="toAccount">To Account:</label>
+                <select id="toAccount" name="toAccount">
+                    <option value="account1">Account 1</option>
+                    <option value="account2">Account 2</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <div class="input-box">
+                <input type="number" id="amount" name="amount" required>
+                </div>
+
+
+                <button type="submit">Transfer</button>
+            </form>
+        </section>
+        </section>
+    </main>
+</div>
+</body>
+</html>

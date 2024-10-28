@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form1{
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #28a745;
+        }
+
+        input[type="text"], input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+      <div class="form">
+        <h1>Online Banking System</h1>
+        <nav>
+            <ul>
+                <div class="form">
+                <li><a href="home1.html">Home</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Money Transfer</h1>
+    <form action="/submit_transfer" method="POST">
+        <label for="senderName">Sender's Name:</label>
+        <input type="text" id="senderName" name="senderName" required>
+
+        <label for="recipientName">Recipient's Name:</label>
+        <input type="text" id="recipientName" name="recipientName" required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+
+        <label for="message">Message (optional):</label>
+        <input type="text" id="message" name="message">
+        <div class="form1">
+        <a href="moneytran.html">Transfer Money</a>
+        </div>
+    </form>
+
+</body>
+</html>
